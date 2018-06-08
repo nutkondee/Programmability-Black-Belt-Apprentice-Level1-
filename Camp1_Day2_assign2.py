@@ -16,11 +16,11 @@ Hint: Figure out which library the randint function belongs to.
 import random
 
 isCorrect = False
-
+radnum = random.randint(1,10)
+print ("system random number : {}".format(radnum))
 while not isCorrect:
     try:
         inpnum = input("Guess the number : ")
-        radnum = random.randint(1,10)
         print ("system random number : {} | input number : {} ".format(radnum, inpnum))
         if inpnum == radnum:
             isCorrect = True
