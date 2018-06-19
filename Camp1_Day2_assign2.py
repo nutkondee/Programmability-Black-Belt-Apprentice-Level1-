@@ -20,7 +20,7 @@ radnum = random.randint(1,10)
 print ("system random number : {}".format(radnum))
 while not isCorrect:
     try:
-        inpnum = input("Guess the number : ")
+        inpnum = int(input("Guess the number : "))
         print ("system random number : {} | input number : {} ".format(radnum, inpnum))
         if inpnum == radnum:
             isCorrect = True
